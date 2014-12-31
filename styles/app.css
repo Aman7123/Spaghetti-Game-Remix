@@ -1,0 +1,198 @@
+.monster{
+    position: absolute;
+    z-index: 100;
+    width: 37px;
+    height: auto;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+.monster:hover{
+    cursor: pointer;
+}
+
+.monster.clicked{
+    opacity: 0.8;
+}
+
+.fireball{
+    position: absolute;
+    z-index: 100;
+    width: 20px;
+    height: auto;
+}
+
+.point{
+    position: absolute;
+    z-index: 200;
+    width: 20px;
+    height: auto;
+}
+
+.myButton {
+	-moz-box-shadow: 0px 1px 0px 0px #1c1b18;
+	-webkit-box-shadow: 0px 1px 0px 0px #1c1b18;
+	box-shadow: 0px 1px 0px 0px #1c1b18;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #eae0c2), color-stop(1, #ccc2a6));
+	background:-moz-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+	background:-webkit-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+	background:-o-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+	background:-ms-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#eae0c2', endColorstr='#ccc2a6',GradientType=0);
+	background-color:#eae0c2;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+	border:2px solid #333029;
+	display:inline-block;
+	cursor:pointer;
+	color:#505739;
+	font-family:arial;
+	font-size:14px;
+	font-weight:bold;
+	padding:12px 16px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+	text-align: center;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ccc2a6), color-stop(1, #eae0c2));
+	background:-moz-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+	background:-webkit-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+	background:-o-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+	background:-ms-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+	background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ccc2a6', endColorstr='#eae0c2',GradientType=0);
+	background-color:#ccc2a6;
+    cursor: pointer;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.explosion{
+    position: absolute;
+    z-index: 100;
+}
+
+#globe{
+    position: absolute;
+    z-index: 50;
+    height: 10vw;
+    width: auto;
+    top: 0;
+    left: 0;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+.SettingsButton {
+    position: absolute;
+    z-index: 50;
+    height: 48px;
+    width: 48px;
+    bottom: 5px;
+    right: 5px;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+.SettingsButton:hover{
+    cursor: pointer;
+}
+.CloseButton {
+    position: absolute;
+    z-index: 50;
+    height: 24px;
+    width: 24px;
+    top: 5px;
+    right: 5px;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+.CloseButton:hover{
+    cursor: pointer;
+}
+#container {
+    height: 100vh;
+    width: 100vw;
+    cursor: crosshair;
+	position: relative;
+    overflow: hidden;
+	background: #222222;
+}
+
+
+#spel-container{
+    position: relative;
+    height: calc(100vh - 70px);
+    overflow-x: hidden;
+}
+
+#spel{
+    padding: 0px 0 0;
+}
+
+#spel h1, #spel h2, #spel h4, #spel p{
+    color: #ffffff;
+    text-align: center;
+}
+
+#spel .GameInfo {
+    margin: 10px;
+    position: absolute;
+    top: 0px;
+    z-index: 101;
+	color: #6fb8da;
+}
+
+#spel .GameInfo p{
+    text-align: left;
+    padding: 0 0 5px;
+    margin: 0;
+}
+.pause {
+
+}
+
+/*Pop Up*/
+.black_overlay{
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index:1001;
+	-moz-opacity: 0.8;
+	opacity:.80;
+	filter: alpha(opacity=80);
+}
+
+.white_content {
+	display: none;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	width: 50%;
+	height: 50%;
+	padding: 16px;
+	background-color: #4e4e4e;
+	z-index:1002;
+	overflow: auto;
+	color: white;
+}
+.content {
+	display: inline;
+}
+.context-1 {
+	position: absolute;
+	left: 50px;
+	top: 36px;
+}

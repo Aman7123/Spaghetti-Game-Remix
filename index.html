@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html dir="ltr" lang="nl-be" class="no-js lt-ie7"><![endif]-->
+<!--[if lt IE 8]><html dir="ltr" lang="nl-be" class="no-js lt-ie8"><![endif]-->
+<!--[if lt IE 9]><html dir="ltr" lang="nl-be" class="no-js lt-ie9"><![endif]-->
+<!--[if lt IE 10]><html dir="ltr" lang="nl-be" class="no-js lt-ie10"><![endif]-->
+<!--if(gt IE 9)|!(IE)><!--><html dir="ltr" lang="nl-be" class="no-js" prefix="og: http://og.me/ns#"><!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1">
+    <title>Spaghetti Invaders</title>
+    <link href="content/images/icon_noodle.gif" rel="icon" type="image/x-icon">
+    <link href="content/images/icon_noodle.gif" rel="shortcut icon" type="image/x-icon">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/helpers.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/buttons.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/app.css">
+    <script src="components/modernizr/modernizr.custom.js"></script>
+	<script>
+	window.onload = function() {
+		document.body.onselectstart = function() {
+			return false;
+		}
+		document.getElementById('play').style.display='none';
+	}
+	</script>
+	<noscript>
+	  <META HTTP-EQUIV="Refresh" CONTENT="0;URL=error.html">
+	</noscript>
+</head>
+<body>
+	<a onclick="console.log('paused'); document.getElementById('play').style.display='inline'; document.getElementById('pause').style.display='none'"><img id="pause" class="SettingsButton" src="./content/images/pause.png" unselectable="on" /></a>
+	<a onclick="console.log('play'); document.getElementById('pause').style.display='inline'; document.getElementById('play').style.display='none'"><img class="SettingsButton" id="play" src="./content/images/play.png" unselectable="on" /></a>
+	<!--<a href="javascript:void(0)" onclick=
+    "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"><img class="SettingsButton" src="./content/images/SettingsButton.png" unselectable="on"/></a>
+
+    <div class="white_content" id="light">
+		<div class="content">
+			<div class="squaredFour">
+				<input type="checkbox" value="None" id="NoGradient" name="check" onclick="" />
+				<label for="squaredFour"></label>
+			</div>
+		<span class="context-1">Enable a gradient background</span>
+		</div>
+		<a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"><img class="CloseButton" src="./content/images/close.png" unselectable="on" /></a>
+    </div>-->
+
+    <div class="black_overlay" id="fade"></div>
+	
+    <div id="container">
+		<section id="spel" class="bg-light-gray">
+			<div id="spel-container">
+				<div class="GameInfo">
+					<p>Highscore - <span class="high">0</span></p>
+					<p>Score - <span class="score">0</span></p>
+				</div>
+				<div class="ready">
+					<h1>Click screen to start</h1>
+					<p>Controls: Click to shoot a fireball.</p>
+					<p>Objective: Kill the flying spaghetti before they reach earth.</p>
+				</div>
+				<div class="dead">
+					<h1>Oh no you failed to save Earth!</h1>
+					<h4>Score: <span class="FinalScore">0</span></h4>
+					<p><a class="myButton" id="playagain">Play Again</a> <a class="myButton" id="saveurl">Save</a></p>
+				</div>
+				<div class="paused">
+					<h1 style="color: aqua; -webkit-text-stroke-width: 1x; -webkit-text-stroke-color: black;">Paused</h1>
+				</div>
+				<div class="getready">
+					<h1 style="color: orange; -webkit-text-stroke-width: 1x; -webkit-text-stroke-color: black;">Get Ready!!</h1>
+					<h2 class="timer" style="color: #33ff54"></h2>
+				</div>
+				<div class="info">
+					<h1 class="info_heading"></h1>
+					<h2 class="info_text"></h2>
+				</div>
+			</div>
+		</section>
+	</div>
+    <script src="components/jquery/jquery-1.11.1.js"></script>
+    <script src="components/jquery-ui-1.11.2/jquery-ui.js"></script>
+    <script src="scripts/utilities.js"></script>
+    <script src="scripts/app.js"></script>
+	<script src="scripts/jquery.cookie.js"></script>
+</body>
+</html>
