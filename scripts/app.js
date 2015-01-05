@@ -1,5 +1,5 @@
 /* Programmed by GeekWithAChick, and Aaron_Renner 
-   Aaron_Renner: https://twitter.com/Aaron_Renner
+   Aaron_Renner: https://twitter.com/Aaron_Renner 
    GeekWithAChick: http://dev.bukkit.org/profiles/GeekWithAChick/ */
 $(function(){
     /* Variables */
@@ -159,7 +159,7 @@ $(function(){
 				$('#spel .FinalScore').text(FinalScore);
 				$('#spel .dead').slideDown();
 				if(!(settings.msPerTick == 20)) {
-					var err = "TPS equalled a number that wasn't 20, please submit a bug at <a href='https://github.com/Aman7123/Spaghetti_Invaders/issues/new?title=Error%20on%20line%20161&labels=bug&assignee=Aman7123' target='_blank' style='color: orange'>Github</a> or just hit F5 on your keyboard to refresh the page";
+					var err = "TPS equalled a number that wasn't 20, please submit a bug at <a href='https://github.com/Aman7123/aman7123.github.io/issues/new?title=Error%20on%20line%20161&labels=bug&assignee=Aman7123' target='_blank' style='color: orange'>Github</a> or just hit F5 on your keyboard to refresh the page";
 					var line = "161";
 					throwError(err, line);
 					break;
@@ -389,9 +389,12 @@ $(function(){
 		var t = 20;
 		settings.msPerTick = t;
 		setInterval(timer, settings.msPerTick);
-		if(settings.msPerTick == 20) {
-			console.log('HELP');
-		}
+		if(!(settings.msPerTick == 20)) {
+			var err = "TPS equalled a number that wasn't 20, please submit a bug at <a href='https://github.com/Aman7123/aman7123.github.io/issues/new?title=Error%20on%20line%20161&labels=bug&assignee=Aman7123' target='_blank' style='color: orange'>Github</a> or just hit F5 on your keyboard to refresh the page";
+			var line = "392";
+			throwError(err, line);
+			break;
+		};
     }
 	
 	playagain.on('click', function(){
@@ -401,7 +404,7 @@ $(function(){
 	});
 	
 	saveurl.on('click', function(){
-		prompt("If you dont have cookies enabled you can just save this URL to return to this page and continue from where you left off!", document.URL + "?highscore=" + highscore);		
+		prompt("If you don't have cookies enabled you can just save this URL to return to this page and continue from where you left off!", document.URL + "?highscore=" + highscore);		
 	});
 		    
 	pause.on('click', function(){
