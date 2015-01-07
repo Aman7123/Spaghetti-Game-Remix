@@ -393,7 +393,7 @@ $(function(){
 			var err = "TPS equalled a number that wasn't 20, please submit a bug at <a href='https://github.com/Aman7123/aman7123.github.io/issues/new?title=Error%20on%20line%20161&labels=bug&assignee=Aman7123' target='_blank' style='color: orange'>Github</a> or just hit F5 on your keyboard to refresh the page";
 			var line = "392";
 			throwError(err, line);
-			break;
+			gameFreeze -= gameFreeze;
 		};
     }
 	
