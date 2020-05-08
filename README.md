@@ -8,3 +8,8 @@ Upcoming Update
 ==================
 1. Adding a feature to make you be able to shoot fireballs were ever you'd like.
 2. Suggest a feature in the issues tab
+
+To Play
+==================
+
+To install simpley download, and start a webserver in the base folder of this repository.
