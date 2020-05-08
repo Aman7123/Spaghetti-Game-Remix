@@ -13,3 +13,8 @@ To Play
 ==================
 
 To install simpley download, and start a webserver in the base folder of this repository.
+
+Compatibility 
+==================
+
+This game was created in 2015 to be used in the Firefox and Google Chrome browser. Functionality may very.
